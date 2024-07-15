@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteApp</title>
+    <link rel="stylesheet" href="note.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen" id="note-list-screen">
+            <header>
+                <h1>Notes</h1>
+            </header>
+            <div class="notes" id="notes">
+              
+            </div>
+            <div class="bottom-bar">
+                <button class="plus-button" id="add-note-button">+</button>
+            </div>
+        </div>
+
+        <div class="screen" id="note-detail-screen" style="display: none;">
+            <header>
+                <button class="back-button" id="back-button">&lt;</button>
+                <button class="check-button" id="save-note-button">&#10003;</button>
+            </header>
+            <div class="note-detail">
+                <h2>Write your notes here</h2>
+                <input type="date" id="note-date">
+                <textarea id="note-content" placeholder="Enter note content..."></textarea>
+            </div>
+            <div class="color-picker">
+                <button class="color-option" data-color="#506A86" style="background-color: #506A86;"></button>
+                <button class="color-option" data-color="#8B5E5B" style="background-color: #8B5E5B;"></button>
+                <button class="color-option" data-color="#734D3A" style="background-color: #734D3A;"></button>
+                <button class="color-option" data-color="#2C4B61" style="background-color: #2C4B61;"></button>
+                <button class="color-option" data-color="#9A715E" style="background-color: #9A715E;"></button>
+                <button class="color-option" data-color="#9A6E5B" style="background-color: #9A6E5B;"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
